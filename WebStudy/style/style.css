@@ -1,0 +1,67 @@
+.cards {
+    display: flex;
+    min-height: 125px;
+    flex-wrap: wrap;
+    border: 1px solid antiquewhite;
+    margin-bottom: 10px;
+}
+
+.list{
+    height: 100px;
+    width: 500px;
+    overflow: auto;
+}
+
+.setBtn {
+    width: 100px;
+}
+
+.b-basket {
+    display: flex;
+    width: 50%;
+    background-color: lightgrey;
+}
+
+.b-card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.b-product {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: lightblue;
+    height: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.delBtn {
+    background-color: lightpink;
+    content: 'Удалить';
+}
+.newBtn {
+    background-color: lightgoldenrodyellow;
+    content: 'Добавить';
+}
+

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div class="b-basket">
+        <h3>Корзина</h3>
+        <input type="text" placeholder="номер товара">
+    </div>
+
+    <div class="cards">
+        <div is="card-component"></div>
+    </div>
+
+    <div class="products">
+        <card-component></card-component>
+        <card-component></card-component>
+        <card-component></card-component>
+        <card-component></card-component>
+        <button>Добавить</button>
+    </div>
+</div>
+
+
+<template id="card-component">
+    <div class="b-product">
+        <span>{{ card.id + card.title }}</span>
+        <button v-on:click="add">Добавить</button>
+    </div>
+</template>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
